@@ -1,16 +1,48 @@
-import {Title, Container} from  './styles'
+import { Title, Container, TopBackground, Form, ContainerInputs, Input, Button, InputLabel } from './styles'
 
-function App() {
+function Home() {
 
   return (
-      <Container>
-        <h1>Olá mundo</h1>
+    <Container>
+      <TopBackground>
+        <img src="" alt="" />
+      </TopBackground>
+
+      <Form form action="">
         <Title>ok react</Title>
-      </Container>
+
+        <ContainerInputs>
+          <div>
+            <div>
+              <InputLabel>
+                Nome<span>*</span>
+              </InputLabel>
+              <Input type='text' placeholder='Nome do usuário' />
+            </div>
+
+            <div>
+              <InputLabel>
+                Idade<span>*</span>
+              </InputLabel>
+              <Input type='number' placeholder='Idade do usuário' />
+            </div>
+          </div>
+
+          <div>
+            <InputLabel>
+              E-mail<span>*</span>
+            </InputLabel>
+            <Input type='email' placeholder='E-mail do usuário' />
+          </div>
+        </ContainerInputs>
+
+        <Button>Cadastrar Usuário</Button>
+      </Form>
+    </Container>
   )
 }
 
-export default App
+export default Home
 
 /*
   Exportar "padrão" -> Uma coisa só por página
