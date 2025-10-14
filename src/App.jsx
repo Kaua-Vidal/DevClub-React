@@ -1,34 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {Title, Container} from  './styles'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <Container>
+        <h1>Olá mundo</h1>
+        <Title>ok react</Title>
+      </Container>
   )
 }
 
 export default App
+
+/*
+  Exportar "padrão" -> Uma coisa só por página
+  Apenas Exportar -> Export antes do nome da função
+*/
+
+/**
+ * No Return é o HTML e precisa sempre ter um elemento
+ * para ser o pai de tudo, ou seja, envolve todos. Não pode ter
+ * duas divs separadas.
+ */
+
+
+/**
+ * Posso criar JAVASCRIPT fora do return e colocar dentro do return
+ */
