@@ -1,13 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import Home from './pages/Home' // default
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { RouterProvider } from 'react-router-dom'
+import router from '../src/routes.jsx'
+ // default
 // import {App, App2} from './App.jsx'
 import { GlobalStyles } from './styles/GlobalStyles.js'
 
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <GlobalStyles />
-    <Home />
-  </StrictMode>,
+    <RouterProvider router={router}/>
+  </React.StrictMode>,
 )
