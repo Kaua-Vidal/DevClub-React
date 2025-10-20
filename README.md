@@ -60,4 +60,5 @@ Este projeto é voltado para aprendizado. Pull requests e sugestões são bem-vi
 👨‍💻 Autor
 
 Kauã Vidal
+
 [LinkedIn](https://www.linkedin.com/in/kaua-vidal) | [GitHub](https://github.com/Kaua-Vidal)
